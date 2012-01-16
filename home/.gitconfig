@@ -1,0 +1,49 @@
+[user]
+    name = Yulka Plekhanova
+    email = yulka@insatsu.us
+
+[core]
+    editor = subl
+    excludesfile = ~/.gitignore
+    filemode = true
+    logallrefupdates = true
+    whitespace = space-before-tab, trailing-space
+
+[alias]
+    wip = !git add -u && git commit -m ...
+    wipc = !date >> WIP && git add WIP && git commit -m ...
+
+[help]
+    browser = open
+
+[branch]
+    autosetupmerge = true
+
+[diff]
+    renames = copies
+    mnemonicprefix = true
+
+[push]
+    default = current
+
+[color]
+    ui = auto
+
+[color "diff"]
+    meta = blue bold
+    frag = magenta bold
+    old = red bold
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow bold
+    remote = green bold
+    plain = red bold
+
+[color "status"]
+    added = yellow
+    changed = green bold
+    untracked = blue bold
+
+[hub]
+    http-clone = true
